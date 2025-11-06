@@ -1,0 +1,1 @@
+A web application that integrates with the OMDb public API to provide movie information in a fast and intuitive way. The user simply enters a movie title, and the app displays key details such as release year, genre, and plot. This project demonstrates the use of API requests, server-side rendering, and dynamic content loading.
