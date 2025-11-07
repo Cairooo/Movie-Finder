@@ -6,8 +6,9 @@ const app = express();
 const port = 3000;
 const API_URL = "https://www.omdbapi.com/?apikey=9772a00&t=";
 
-app.use(express.static("public"));
+app.set("view engine", "ejs");
 
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
