@@ -33,12 +33,12 @@ body {
 }
 
 h1 {
-  transform: translateY(-80%);
+  transform: translateY(-100%);
   margin-top: 20%;
   margin-bottom: 12%;
   position: relative;
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   z-index: 2;
 }
