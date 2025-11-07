@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background-color: black;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -12,7 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .container::before {
@@ -27,16 +29,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  inset: 0;
 }
 
 h1 {
-  transform: translateY(-150%);
-  margin: 0;
+  transform: translateY(-80%);
+  margin-top: 20%;
+  margin-bottom: 12%;
   position: relative;
   color: white;
-  font-size: 100px;
+  font-size: 4rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   z-index: 2;
 }
 
@@ -44,12 +48,12 @@ h1 {
   display: flex;
   z-index: 2;
   gap: 10px;
-  transform: translateY(-250%);
+  transform: translateY(-150%);
 }
 
 .bar {
-  height: 70px;
-  width: 350px;
+  min-height: 4rem;
+  width: 12rem;
   border-radius: 10px 10px 10px 10px;
   border: 1px solid;
   background-color: transparent;
@@ -61,7 +65,7 @@ h1 {
 }
 
 button {
-  width: 100px;
+  min-width: 5rem;
   border-radius: 10px 10px 10px 10px;
   border: none;
   background-color: #dd0303;
@@ -81,16 +85,41 @@ button:active {
   height: auto;
   width: auto;
   z-index: 2;
+  margin-bottom: 0%;
 }
 
 p {
   padding: 8px;
-  font-size: 16px;
+  font-size: 0.5rem;
 }
 
 footer {
-  position: relative;
-  top: 230px;
+  margin-top: 5%;
   color: white;
   z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    transform: translateY(-100%);
+    font-size: 8rem;
+    margin-bottom: 8%;
+  }
+
+  .search-form {
+    transform: translateY(-450%);
+  }
+
+  .bar {
+    width: 15rem;
+  }
+
+  .movie-info {
+    transform: translateY(-50%);
+  }
+
+  p {
+    font-size: 2rem;
+    padding: 2rem;
+  }
 }
